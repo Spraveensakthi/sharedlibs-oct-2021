@@ -4,7 +4,7 @@ def config = [:]
 	body.resolveStrategy = Closure.DELEGATE_FIRST
 	body.delegate = config
 	body()
-node('master'){  
+node('slave'){  
     def dockerImage
 	def clusterName
 	def project
